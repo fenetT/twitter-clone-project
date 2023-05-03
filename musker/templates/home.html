@@ -5,7 +5,7 @@
 
 <div class="container text-center" color="blue">
 	<div class="row">
-		<div class="col-8 bg-primary">
+		<div class="col-8 bg-secondary">
 
 
 			<h1>Tweets!</h1>
@@ -14,7 +14,7 @@
 			<div class="alert alert-dark" role="alert">
 				<div class="container">
 					<div class="row">
-						<div class="col-1">
+						<div class="col-1 " >
 							{% if tweet.user.profile.profile_image %}
 							<img src="{{ tweet.user.profile.profile_image.url }}" width=50 height=50
 								class="rounded-circle" alt="{{ profile.user.username }}">
@@ -25,7 +25,7 @@
 							{% endif %}
 						</div>
 
-						<div class="col-30 " >
+						<div class="col-30 ">
 							{{ tweet.body }}<br />
 							<small class="text-muted">
 								({{ tweet.created_at}}) By
